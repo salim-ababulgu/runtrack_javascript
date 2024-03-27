@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Bouton</title>
+    <style>
+        /* Ajoute un peu de style pour rendre le bouton et l'article plus visibles */
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        article {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #007bff;
+            display: none; /* Masque l'article au chargement de la page */
+        }
+    </style>
+</head>
+<body>
+
+<button id="button" onclick="showhide()">Afficher/Cacher l'article</button>
+
+<article id="article">
+    L'important n'est pas la chute, mais l'atterrissage.
+</article>
+
+</body>
+<script src="./script.js"></script>
+</html>

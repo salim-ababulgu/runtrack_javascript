@@ -41,9 +41,6 @@ const konamiCode = [
   function stylizePage() {
     // Sélection de l'élément body
     const body = document.querySelector('body');
-  
-    // Modification des couleurs de fond et de texte
-    body.style.backgroundColor = '#0062ff';
-    body.style.color = '#ffffff';
+  Ajoutle.color = '#ffffff';
   }
   

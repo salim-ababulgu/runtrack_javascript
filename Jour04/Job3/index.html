@@ -1,0 +1,60 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Comment Créer un beau Formulaire de Contact en HTML & CSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+    <body>
+        <div>
+            <h2>Filtrage des données</h2>
+            <form id="filterForm">
+                <label for="id">ID:</label>
+                <input type="text" id="id" name="id"><br><br>
+        
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom"><br><br>
+        
+                <label for="type">Type:</label>
+                <select id="type" name="type">
+                    <option value="">-- Select a type --</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Fire">Fire</option>
+                    <option value="Water">Water</option>
+                    <option value="Grass">Grass</option>
+                    <option value="Electric">Electric</option>
+                    <option value="Ice">Ice</option>
+                    <option value="Fighting">Fighting</option>
+                    <option value="Poison">Poison</option>
+                    <option value="Ground">Ground</option>
+                    <option value="Flying">Flying</option>
+                    <option value="Psychic">Psychic</option>
+                    <option value="Bug">Bug</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Ghost">Ghost</option>
+                    <option value="Dragon">Dragon</option>
+                    <option value="Dark">Dark</option>
+                    <option value="Steel">Steel</option>
+                    <option value="Fairy">Fairy</option>
+                </select><br><br>
+        
+                <input type="button" value="Filtrer" onclick="filtrerDonnees()">
+            </form>
+        
+            <div id="result"></div>
+        </div>
+        
+        <script src="./script.js"></script>
+    </body>
+    
+</html>
+
+
+
+

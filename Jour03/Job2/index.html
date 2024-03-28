@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice Arc-en-ciel</title>
+</head>
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Pour éviter le défilement */
+}
+
+.conteneur_parant {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+}
+
+.conteneur1 {
+    flex: 0.25;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 25px;
+}
+
+.conteneur2 {
+    flex: 1;
+    background: #cccccc;
+    border-radius: 25px;
+    border: #000 solid 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden; /* Pour éviter le défilement */
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.btn-melanger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.recipient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding: 0 500px;
+    gap: 2.5px;
+}
+
+.conteneur {
+    border: 2px solid #000;
+}
+
+img {
+    cursor: grab;
+}
+
+#message {
+    text-align: center;
+}
+
+    </style>
+
+    <body>
+
+        <div class="conteneur_parant">
+            
+            <div class="conteneur1">
+                <h1>Arc-en-ciel Puzzle</h1>
+
+                <div class="btn-melanger">
+                    <!-- Bouton pour mélanger les images -->
+                    <button id="melanger">
+                        Mélanger les images
+                    </button>
+                </div>
+
+                <button id="valider">
+                    Valider
+                </button>
+            </div>
+
+            <div class="conteneur2">
+                <!-- Conteneur pour les images de l'arc-en-ciel -->
+                <div class="recipient" id="arc-en-ciel"> <!-- Les images seront insérées ici -->
+                    <div id="conteneur1" ></div>
+                    <div id="conteneur2" ></div>
+                    <div id="conteneur3" ></div>
+                    <div id="conteneur4" ></div>
+                    <div id="conteneur5" ></div>
+                    <div id="conteneur6" ></div>
+                </div> 
+                
+            </div>
+            <!-- Message de victoire ou de défaite -->
+            <!-- <p id="message"></p> -->
+        </div>
+
+    </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="./script.js"></script>
+</html>
+

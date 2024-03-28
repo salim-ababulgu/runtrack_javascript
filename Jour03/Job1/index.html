@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouton Afficher/Cacher</title>
+    <style>
+        /* Ajoute un peu de style pour rendre le bouton et l'article plus visibles */
+        #btn-all-hide {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        #nothing {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #007bff;
+            display: none; /* Masque l'article au chargement de la page */
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        article {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #007bff;
+            display: none; /* Masque l'article au chargement de la page */
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn-all-hide">Cacher l'article</button>
+    <button id="btn-all-show">Afficher l'article</button>
+    <article id="article">Les logiciels et les cathédrales, c'est un peu la même chose - d'abord, on les construit, ensuite, on prie.</article>
+    
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="./script.js"></script>
+
+</body>
+</html>

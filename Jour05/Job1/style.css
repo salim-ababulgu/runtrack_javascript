@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #198750;
+    padding: 15px;
+    margin: 15px 25px 25px 25px;
+    border-radius: 50px;
+}
+
+.titre {
+    display: flex;
+    align-items: center;
+}
+
+.contenu_du_client {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.contenu_du_client a {
+    text-decoration: none;
+}
+
+.btn-nav {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 2px solid #198750;
+}
+
+.btn-nav:hover {
+    background-color: #198750;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.title_nav {
+    color: #fff;
+}
+
+
+/*
+ FORMULAIRE 
+*/
+
+.title_form {
+    color: #000;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.error-message {
+    display: block;
+    color: red;
+    margin-top: 5px;
+}
+
+.success-message {
+    color: #198750;
+}
+
+input::selection {
+    background-color: transparent; /* Pas de couleur de fond */
+}
+
+/* ---------- Formulaire d'Inscription ----------*/
+.form-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.contenu {
+    margin: 0 25px;
+}
+
+.famille_de_form-outline {
+    display: flex;
+    gap: 25px;
+}
+
+.form-outline {
+    margin-bottom: 20px;
+}
+
+.form-outline input[type="text"],
+.form-outline input[type="password"],
+.form-outline input[type="number"],
+.form-outline textarea {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.form_inscription_mail {
+    width: 825px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+
+/* ---------- Formulaire de Connexion ----------*/
+
+.form_connexion_mail .form_connexion_password {
+    width: 825px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* ---------- Validation du formulaire ----------*/
+.btn_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_validation_de_form {
+    
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #198750;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bolder;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.btn_validation_de_form:hover {
+    background-color: #25c073;
+    border: 2px solid #198750;
+}
+
+/* ---------- Message de vérification ----------*/
+.title_alert_verification {
+    margin: 15px 0 15px 0;
+}
+
+.message_de_verification {
+    display: flex;
+    gap: 25px;
+}
+
+.groupe_message_de_verification_un {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.groupe_message_de_verification_deux {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+

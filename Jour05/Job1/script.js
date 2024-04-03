@@ -56,9 +56,14 @@ myForm.addEventListener("submit" , valid_f);
 // Fonction de validation
 function valid_f(e){
     // Validation du prénom
-    if(prenom.value === "") {
+    if (prenom.value.length < 3) {
+        error_name.innerHTML = "Le prénom doit contenir au moins 3 caractères !";
+        error_name.style.color = "red";
+        prenom.style.borderColor = "red";
+        e.preventDefault();
+    } else if(prenom.value === "") {
         error_name.innerHTML = "Le prénom est requis !";
-        error_name.style.color = " red";
+        error_name.style.color = "red";
         prenom.style.borderColor = "red";
         e.preventDefault();
     } else if (!myRegex.test(prenom.value)) {
@@ -73,9 +78,14 @@ function valid_f(e){
     }
 
     // Validation du nom de famille
-    if (family.value === "") {
-        error_family.innerHTML = "Le nom est requis";
-        error_family.style.color = " red";
+    if (family.value.length < 3) {
+        error_family.innerHTML = "Le nom doit contenir au moins 3 caractères !";
+        error_family.style.color = "red";
+        family.style.borderColor = "red";
+        e.preventDefault();
+    } else if (family.value === "") {
+        error_family.innerHTML = "Le nom est requis !";
+        error_family.style.color = "red";
         family.style.borderColor = "red";
         e.preventDefault();
     } else if (!myRegex.test(family.value)) {
@@ -89,27 +99,15 @@ function valid_f(e){
         family.style.borderColor = "green";
     }
 
-    // Validation de l'e-mail
-    if (mail.value === "") {
-        error_mail.innerHTML = "L'email est requis !";
-        error_mail.style.color = " red";
-        mail.style.borderColor = "red";
-        e.preventDefault();
-    } else if (!myRegexmail.test(mail.value)) {
-        error_mail.innerHTML = "Veuillez entrer une autre valeur !";
-        error_mail.style.color = "red";
-        mail.style.borderColor = "red";
-        e.preventDefault();
-    } else {
-        error_mail.innerHTML = "";
-        error_mail.style.color = "green";
-        mail.style.borderColor = "green";
-    }
-
     // Validation du mot de passe
-    if (password.value === "") {
+    if (password.value.length < 6) {
+        error_password.innerHTML = "Le mot de passe doit contenir au moins 6 caractères !";
+        error_password.style.color = "red";
+        password.style.borderColor = "red";
+        e.preventDefault();
+    } else if (password.value === "") {
         error_password.innerHTML = "Le mot de passe est requis !";
-        error_password.style.color = " red";
+        error_password.style.color = "red";
         password.style.borderColor = "red";
         e.preventDefault();
     } else {
@@ -118,10 +116,15 @@ function valid_f(e){
         password.style.borderColor = "green";
     }
 
-    // Validation du mot de passe de vérification
-    if (confirmPassword.value === "") {
-        error_confirmPassword.innerHTML = "Veuillez confirmer le mot de passe !";
-        error_confirmPassword.style.color = " red";
+    // Validation de la confirmation du mot de passe
+    if (confirmPassword.value.length < 6) {
+        error_confirmPassword.innerHTML = "La confirmation du mot de passe doit contenir au moins 6 caractères !";
+        error_confirmPassword.style.color = "red";
+        confirmPassword.style.borderColor = "red";
+        e.preventDefault();
+    } else if (confirmPassword.value === "") {
+        error_confirmPassword.innerHTML = "La confirmation du mot de passe est requise !";
+        error_confirmPassword.style.color = "red";
         confirmPassword.style.borderColor = "red";
         e.preventDefault();
     } else if (confirmPassword.value !== password.value) {
@@ -134,11 +137,17 @@ function valid_f(e){
         error_confirmPassword.style.color = "green";
         confirmPassword.style.borderColor = "green";
     }
+    
 
     // Validation de l'adresse
-    if (address.value === "") {
+    if (address.value.length < 3) {
+        error_address.innerHTML = "L'adresse doit contenir au moins 3 caractères !";
+        error_address.style.color = "red";
+        address.style.borderColor = "red";
+        e.preventDefault();
+    } else if (address.value === "") {
         error_address.innerHTML = "L'adresse est requise !";
-        error_address.style.color = " red";
+        error_address.style.color = "red";
         address.style.borderColor = "red";
         e.preventDefault();
     } else {
@@ -148,9 +157,14 @@ function valid_f(e){
     }
 
     // Validation du code postal
-    if (postalCode.value === "") {
+    if (postalCode.value.length < 3) {
+        error_postalCode.innerHTML = "Le code postal doit contenir au moins 3 caractères !";
+        error_postalCode.style.color = "red";
+        postalCode.style.borderColor = "red";
+        e.preventDefault();
+    } else if (postalCode.value === "") {
         error_postalCode.innerHTML = "Le code postal est requis !";
-        error_postalCode.style.color = " red";
+        error_postalCode.style.color = "red";
         postalCode.style.borderColor = "red";
         e.preventDefault();
     } else if (!myRegexNumber.test(postalCode.value)) {

@@ -1,48 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Inscription</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <header>
-        <nav class="navbar">
-            <div class="titre">
-              <h1>Jour 5</h1>
-            </div>
-            <div class="contenu_du_client">
-                <a href="./inscription.html" class="btn-nav">Inscription</a>
-            </div>
-          </nav>
-    </header>
-
-    <body>
-        <!-- Contenant du formulaire -->
-        <div class="form-center">
-            <form method="GET" id="myForm">
-                <h1>Connexion</h1>
-                    <!-- Email -->
-                    <div class="col-md-5">
-                        <div class="form-outline">
-                            <input type="email" id="mail" class="form_connexion_mail" placeholder="VOTRE EMAIL">
-                            <span id="error_mail" class="fs_mbl"></span> 
-                        </div>
-                    </div>
-                    <!-- Mot de passe -->
-                    <div class="col-md-12">
-                        <div class="form-outline">
-                            <input type="text" id="sujet" class="form_connexion_password" placeholder="SUJET">
-                            <span id="error_sujet" class="fs_mbl"></span>
-                        </div>
-                    </div>
-                <!-- Btn de validation -->
-                <div class="btn_center">
-                    <input type="submit" value="ENVOYER" class="btn_validation_de_form">
-                </div>
-            </form>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <!-- Styles CSS pour la mise en forme (optionnel) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Connexion</h1>
+    <form id="loginForm" action="#" method="post">
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <span id="emailError" class="error"></span>
         </div>
-    </body>
-    <script src="./script.js"></script>
+        <div>
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password" name="password">
+            <span id="passwordError" class="error"></span>
+        </div>
+        <button type="">Se connecter</button>
+    </form>
+
+    
+    <script src="validation.js"></script>
+</body>
 </html>
